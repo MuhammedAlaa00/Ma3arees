@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>Sign Up</title>
+</head>
+<body>
+  <div class="preloader">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+  </div>
+      <div class="sign">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="text-center mb-4 mb-lg-0">
+                          <div class="center_logo">
+                            <a href="index.html"><img src="./assets/images/logo.png" alt="" srcset=""></a>
+                          </div>
+                          <h3 class="lang" key="createAccount">Create Account</h3>
+                          <button type="submit" class="btn mt-lg-5 mt-0 sign_btn d-none d-lg-inline-block lang" key="LogBtn" data-toggle="modal" data-target="#signModal">Sign Up</button>
+                      </div>
+                  </div>
+                  <div class="col-lg-8 col-sm-12">
+                      <form action="" class="main_form">
+                          <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="signFirstName" placeholder="User Name">
+                          </div>
+                          <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="signFamilyName" placeholder="Family Name">
+                          </div>
+                          <div class="d-flex select_code_div">
+                          <div class="mobile_inpu">          
+                              <div class="form-group mb-4">
+                              <input type="text" class="form-control left_input" id="PhoneNumber"  placeholder=" PhoneNumber">
+                              </div>
+                          </div>
+                          <div class="drop_down_inpu" dir="ltr">    
+                              <div class="form-group mb-4">
+                              <div class="form-control right_input">
+                                  <button class="btn_drop" type="button">
+                                  +02
+                                  </button>
+                                  <div class="code-dropdown-menu">
+                                  <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                                  <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                                  <a class="dropdown-item text-center" href="#"> +04</a>
+                                  <a class="dropdown-item text-center" href="#"> +05</a>
+                                  <a class="dropdown-item text-center" href="#"> +06</a>
+                                  <a class="dropdown-item text-center" href="#"> +07</a>
+                                  <a class="dropdown-item text-center" href="#"> +08</a>
+                                  <a class="dropdown-item text-center" href="#"> +09</a>
+                                  <a class="dropdown-item text-center" href="#"> +010</a>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                          </div>
+                          <select class="mb-4">
+                            <option data-display="gender" class="lang">gender</option>
+                            <option value="0" class="lang">Male</option>
+                            <option value="1">Fe-male</option>
+                          </select>
+                          <div class="form-group mb-4">
+                              <input type="password" class="form-control" id="SignPassword" placeholder="password">
+                          </div>
+                          <div class="form-group mb-4">
+                              <input type="password" class="form-control" id="SignconfirmPassword" placeholder="Confirm password">
+                          </div>
+                          <div class="col-lg-12 text-center connect">
+                              <div class="d-flex justify-content-center flex-row-reverse">
+                                  <a href="signIn.html" class="mr-3 lang" key="logAccount">Log In</a>
+                                  <span class="d-block lang mr-3" key="logQues">Do You Have Account ?</span>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="text-center w-100 mt-3 d-lg-none d-block">
+                      <button type="submit" class="btn mt-lg-5 mt-0 sign_btn lang" key="LogBtn" data-toggle="modal" data-target="#signModal">Sign Up</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade first_modal sign_modal" id="signModal">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center d-block">
+                <h5 class="modal-title" id="exampleModalLongTitle">الشروط والاحكام</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>-->
+              </div>
+              <div class="modal-body pb-3 text-center">
+                <p>
+                  إقرار و تعهد على مسئولية مدخل البيانات
+                  أقر أنا مدخل البيانات بمسئوليتي التامة عن صحة و سالمة البيانات
+                  التي تم إدخالها و أتحمل وحدي المسئولية كاملة (المدنية و الجزائية)
+                  الناتجة عن عدم صحة ما تم إدراجه من بيانات ودون أدنى مسئولية
+                  علي إدارة التطبيق و في حاجه عدم استيفاء جميع البيانات المطلوبة
+                  فلن يتم قبول الطلب من إداره التطبيق
+              </p>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="modal-btn w-100 fade_sign_modal" data-toggle="modal" data-target="#exampleModalCenter2">حفظ</a>
+                <span aria-hidden="true" class="" data-dismiss="modal">&times;</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--crown modal-->
+      <div class="modal fade notify_modal" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <span><i class="fas fa-crown"></i></span>
+              <h5 class="modal-title w-100" id="exampleModalLabel">Private Nomination</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+              <div class="text-center accept_user">
+                <a href="private_nomination.html" class="btn">accept</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--notification modal-->
+      <div class="modal fade notify_modal" id="exampleModaly" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <h5 class="modal-title w-100" id="exampleModalLabel">User Name</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Family Name</p>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Name Name</p>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade second_modal" id="exampleModalCenter2">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center d-block">
+              <h5 class="modal-title lang" id="exampleModalLongTitle" key="terms">Terms and Conditions</h5>
+            </div>
+            <div class="modal-body">
+              <div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="Father_name" placeholder="Father Name">
+                </div>
+                <div class="d-flex">
+                  <div class="mobile_inpu">          
+                    <div class="form-group">
+                      <input type="text" class="form-control left_input" id="Father_number"  placeholder="Father Number">
+                    </div>
+                  </div>
+                  <div class="drop_down_inpu">    
+                    <div class="form-group">
+                      <div class="form-control right_input">
+                        <button class="btn_drop" type="button">
+                          code
+                        </button>
+                        <div class="code-dropdown-menu">
+                          <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                          <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                          <a class="dropdown-item text-center" href="#"> +04</a>
+                          <a class="dropdown-item text-center" href="#"> +05</a>
+                          <a class="dropdown-item text-center" href="#"> +06</a>
+                          <a class="dropdown-item text-center" href="#"> +07</a>
+                          <a class="dropdown-item text-center" href="#"> +08</a>
+                          <a class="dropdown-item text-center" href="#"> +09</a>
+                          <a class="dropdown-item text-center" href="#"> +010</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center condition mb-2"> 
+                  <p class="m-auto lang" key="modal_p">
+                    In line with the established controls, your registration of guardian data means that a guardian will know that you are using Maares application, as it will be confirmed on
+                  </p>
+                </div>
+                <div class="text-center w-100">
+                  <label for="check" class="lang" key="approve">
+                    I agree to the terms and conditions</label>
+                  <input type="checkbox" name="check" id="checkbox">
+                </div>
+              </div>
+            <div class="modal-footer">
+                <a type="submit" class="btn second_modal_btn modal-btn w-100 dis_link lang" href="javascript:void(0)" key="save_changes">
+                  Save changes
+                </a>
+                <span aria-hidden="true" class="" data-dismiss="modal">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <script src="assets/js/jquery-3.4.1.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/jquery.nice-select.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/language.js"></script>
+      <script>
+        $('.fade_sign_modal').click(function(){
+            $('.first_modal ,.modal-backdrop').toggleClass('show');
+        });
+        $('#checkbox').on('change', function() 
+        {
+          if ($(this).is(":checked"))
+          {
+              $('.dis_link').attr('href' , 'index.html');
+          }
+          else
+          
+          {
+              $('.dis_link').removeAttr('href');
+          }
+        });
+      </script>
+</body>
+</html>

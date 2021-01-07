@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>Nomination</title>
+</head>
+<body class="nominate_body">
+  <div class="preloader">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" srcset=""></a>
+    <ul class="navbar-nav small_nav ml-auto">
+      <li class="">
+        <a href="javascript:void(0)" class="nav-link lang date" id="s-date"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="search.html"><i class="fas fa-search"></i></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <span class="nav-link" data-toggle="dropdown">
+          <i class="fas fa-language"></i>
+        <span>
+          <div class="dropdown-menu language-dropdown d-none" aria-labelledby="navbarDropdown">
+              <div class="row m-0">
+                <div class="col-g-6 lang-parent bord first_bord trans" id="en">
+                    <span class="active">english</span>
+                </div>
+                <div class="col-g-6 lang-parent trans" id="ar"> 
+                    <span>العربية</span>
+                </div>    
+                <div class="col-g-6 lang-parent trans bord" id="fr">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>    
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>  
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>    
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>
+            </div>
+          </div> 
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu user_list" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="user_profile.html">
+            <span class="mr-3 ml-2 lang" key="Profile">Profile</span>
+            <span><i class="fas fa-user"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="signIn.html">
+            <span class="mr-3 ml-2 lang" key="login">login</span>
+            <span><i class="fas fa-user"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="signUp.html">
+            <span class="mr-3 ml-2 lang" key="createaccount">create account</span>
+            <span><i class="fas fa-user-friends"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="nomination.html">
+              <span class="mr-3 ml-2 lang" key="">nomination</span>
+              <span><i class="fas fa-id-card"></i></span> 
+              </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse" href="javascript:void(0)">
+            <span class="mr-3 ml-2 lang" key="logout">log out</span>
+            <span><i class="fas fa-sign-out-alt"></i></span>
+            </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link crown_notification" href="javascript:void(0)" data-toggle="dropdown"><i class="fas fa-crown"></i></a>
+        <div class="dropdown-menu crown_notify" aria-labelledby="navbarDropdown">
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link notification_toggle" data-toggle="dropdown" href="javascript:void(0)">
+          <i class="fas fa-bell"></i>
+        </a>
+        <div class="dropdown-menu notification_list" aria-labelledby="navbarDropdown">
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto center_nav lang_change any_lang">
+        <li class="nav-item active" data-scroll="header">
+          <a class="nav-link lang" key="home" href="index.html">home</a>
+        </li>
+        <li class="nav-item" data-scroll="footer">
+          <a class="nav-link lang vid" href="javascript:void(0)" key="donation">donation</a>
+        </li>
+        <li class="nav-item" data-scroll="footer">
+          <a href="javascript:void(0)" class="nav-link lang" key="who we are">who we are</a>
+        </li>
+        <li class="nav-item" data-scroll="contact">
+          <a href="javascript:void(0)" class="nav-link lang" key="contact us">contact us</a>
+        </li>
+      </ul>
+        <ul class="navbar-nav small_right_nav">
+            <li class="">
+              <a href="javascript:void(0)" class="nav-link lang date" id="date"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link crown_notification" href="javascript:void(0)" data-toggle="dropdown"><i class="fas fa-crown"></i></a>
+              <div class="dropdown-menu crown_notify" aria-labelledby="navbarDropdown">
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link notification_toggle" data-toggle="dropdown" href="javascript:void(0)">
+                <i class="fas fa-bell"></i>
+              </a>
+              <div class="dropdown-menu notification_list" aria-labelledby="navbarDropdown">
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="user_profile.html">
+                  <span class="mr-3 ml-2 lang" key="Profile">Profile</span>
+                  <span><i class="fas fa-user"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="signIn.html">
+                  <span class="mr-3 ml-2 lang" key="login">login</span>
+                  <span><i class="fas fa-user"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="signUp.html">
+                  <span class="mr-3 ml-2 lang" key="createaccount">create account</span>
+                  <span><i class="fas fa-user-friends"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="nomination.html">
+                    <span class="mr-3 ml-2 lang" key="">nomination</span>
+                    <span><i class="fas fa-id-card"></i></span> 
+                    </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse" href="javascript:void(0)">
+                  <span class="mr-3 ml-2 lang" key="logout">log out</span>
+                  <span><i class="fas fa-sign-out-alt"></i></span>
+                  </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link" data-toggle="dropdown">
+                <i class="fas fa-language"></i>
+              <span>
+                <div class="dropdown-menu language-dropdown d-none" aria-labelledby="navbarDropdown">
+                    <div class="row m-0">
+                      <div class="col-g-6 lang-parent bord first_bord trans" id="en">
+                          <span class="active">english</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans" id="ar"> 
+                          <span>العربية</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent trans bord" id="fr">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>  
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>
+                  </div>
+                </div> 
+            </li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+    <div class="sign sign_in nominate">
+        <div class="container">
+            <div class="row">
+              <div class="text-center w-100 mb-4 nominate_p">
+                <p> قم بارسال دعوة بالترشيح لاحد اصدقائك للحصول على شريك الحياه المناسب </p>
+              </div>
+                <div class="col-lg-12 col-sm-12">
+                    <form action="" class="main_form nomination_form">
+                        <select class="mb-4">
+                          <option data-display="data1-1" class="lang">tall</option>
+                          <option value="0" class="lang">160cm</option>
+                          <option value="1">Another option</option>
+                          <option value="2">A disabled option</option>
+                          <option value="3">Potato</option>
+                        </select>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control" id="LogFirstName" placeholder="User Name">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control" id="LogPassword" placeholder="Password">
+                        </div>
+                        <div class="d-flex select_code_div">
+                          <div class="mobile_inpu">          
+                              <div class="form-group mb-4">
+                              <input type="text" class="form-control left_input" id="PhoneNumber"  placeholder=" PhoneNumber">
+                              </div>
+                          </div>
+                          <div class="drop_down_inpu" dir="ltr">    
+                              <div class="form-group mb-4">
+                              <div class="form-control right_input">
+                                  <button class="btn_drop" type="button">
+                                  +02
+                                  </button>
+                                  <div class="code-dropdown-menu">
+                                  <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                                  <a class="dropdown-item text-center" href="#"><img src="assets/images/egypt.png" alt="" srcset=""> +02</a>
+                                  <a class="dropdown-item text-center" href="#"> +04</a>
+                                  <a class="dropdown-item text-center" href="#"> +05</a>
+                                  <a class="dropdown-item text-center" href="#"> +06</a>
+                                  <a class="dropdown-item text-center" href="#"> +07</a>
+                                  <a class="dropdown-item text-center" href="#"> +08</a>
+                                  <a class="dropdown-item text-center" href="#"> +09</a>
+                                  <a class="dropdown-item text-center" href="#"> +010</a>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="mb-4">
+                          <div class="row count-row">
+                            <div class="col-lg-8">
+                              <div class="d-flex justify-content-between count">
+                                <div><span id="min">-</span></div>
+                                <div class="text-center"><input type="text" id="final" value="0" class="final"></div>
+                                <div><span id="sum">+</span></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="invite_tag"><span class="">Invites</span></div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                      <button class="btn mt-2" type="submit" data-toggle="modal" data-target="#exampleModalo">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/contact-us.js"></script>
+      <!--crown modal-->
+      <div class="modal fade notify_modal" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <span><i class="fas fa-crown"></i></span>
+              <h5 class="modal-title w-100" id="exampleModalLabel">Private Nomination</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+              <div class="text-center accept_user">
+                <a href="private_nomination.html" class="btn">accept</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--notification modal-->
+      <div class="modal fade notify_modal" id="exampleModaly" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <h5 class="modal-title w-100" id="exampleModalLabel">User Name</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Family Name</p>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Name Name</p>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nominate invite notify-->
+      <div class="modal fade notify_modal" id="exampleModalo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <h5 class="modal-title w-100" id="exampleModalLabel">user user</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Nationality</p>
+                  <p>Number</p>
+                  <p>Education</p>
+                </div>
+                <div>
+                  <p>Egyption</p>
+                  <p>+0252566762</p>
+                  <p>Student</p>
+                </div>
+              </div>
+              <div class="text-center accept_user">
+                <a href="nomination.html" class="btn">accept</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top"><span><i class="fas fa-level-up-alt"></i></span></div>
+      <script src="assets/js/footer.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script>
+      // nomination page block code 
+      var add = 0;
+      var sum = document.getElementById('sum');
+      var min = document.getElementById('min');
+      sum.onclick = function(){
+          add++;
+          document.getElementById('final').value = add;
+      }
+      min.onclick = function (){
+          if (add == 0)
+          {
+              return false
+          };
+          add--;
+          document.getElementById('final').value = add;
+      }
+    </script>
+</body>
+</html>

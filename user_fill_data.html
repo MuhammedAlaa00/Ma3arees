@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>User fill Profile data</title>
+</head>
+<body>
+  <div class="preloader">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="" srcset=""></a>
+    <ul class="navbar-nav small_nav ml-auto">
+      <li class="">
+        <a href="javascript:void(0)" class="nav-link lang date" id="s-date"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="search.html"><i class="fas fa-search"></i></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <span class="nav-link" data-toggle="dropdown">
+          <i class="fas fa-language"></i>
+        <span>
+          <div class="dropdown-menu language-dropdown d-none" aria-labelledby="navbarDropdown">
+              <div class="row m-0">
+                <div class="col-g-6 lang-parent bord first_bord trans" id="en">
+                    <span class="active">english</span>
+                </div>
+                <div class="col-g-6 lang-parent trans" id="ar"> 
+                    <span>العربية</span>
+                </div>    
+                <div class="col-g-6 lang-parent trans bord" id="fr">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>    
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>  
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>    
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>
+                <div class="col-g-6 lang-parent bord trans">
+                    <span>french</span>
+                </div>
+                <div class="col-g-6 lang-parent trans">
+                    <span>germany</span>
+                </div>
+            </div>
+          </div> 
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu user_list" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="user_profile.html">
+            <span class="mr-3 ml-2 lang" key="Profile">Profile</span>
+            <span><i class="fas fa-user"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="signIn.html">
+            <span class="mr-3 ml-2 lang" key="login">login</span>
+            <span><i class="fas fa-user"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="signUp.html">
+            <span class="mr-3 ml-2 lang" key="createaccount">create account</span>
+            <span><i class="fas fa-user-friends"></i></span> 
+            </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="nomination.html">
+              <span class="mr-3 ml-2 lang" key="">nomination</span>
+              <span><i class="fas fa-id-card"></i></span> 
+              </a>
+            <a class="dropdown-item d-flex justify-content-end flex-row-reverse" href="javascript:void(0)">
+            <span class="mr-3 ml-2 lang" key="logout">log out</span>
+            <span><i class="fas fa-sign-out-alt"></i></span>
+            </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link crown_notification" href="javascript:void(0)" data-toggle="dropdown"><i class="fas fa-crown"></i></a>
+        <div class="dropdown-menu crown_notify" aria-labelledby="navbarDropdown">
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+            <div class="left_data">
+              <p>user name</p>
+              <div class="d-flex justify-content-around align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data d-flex align-items-center justify-content-center">
+                <i class="fas fa-crown"></i>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link notification_toggle" data-toggle="dropdown" href="javascript:void(0)">
+          <i class="fas fa-bell"></i>
+        </a>
+        <div class="dropdown-menu notification_list" aria-labelledby="navbarDropdown">
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+            <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+              <p>user name</p>
+              <div class="d-flex align-items-center">
+                <span class="d-inline-block">data</span>
+                <span class="d-inline-block">100%</span>
+              </div>
+            </div>
+            <div class="right_data">
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                  <a href="javascript:void(0)" class="mr-1 cancel">
+                    <i class="fas fa-times"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="ml-1 check">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+                <span>24/4/2020</span>
+                <span>14:56pm</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto center_nav lang_change any_lang">
+        <li class="nav-item active" data-scroll="header">
+          <a class="nav-link lang" key="home" href="index.html">home</a>
+        </li>
+        <li class="nav-item" data-scroll="footer">
+          <a class="nav-link lang vid" href="javascript:void(0)" key="donation">donation</a>
+        </li>
+        <li class="nav-item" data-scroll="footer">
+          <a href="javascript:void(0)" class="nav-link lang" key="who we are">who we are</a>
+        </li>
+        <li class="nav-item" data-scroll="contact">
+          <a href="javascript:void(0)" class="nav-link lang" key="contact us">contact us</a>
+        </li>
+      </ul>
+        <ul class="navbar-nav small_right_nav">
+            <li class="">
+              <a href="javascript:void(0)" class="nav-link lang date" id="date"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link crown_notification" href="javascript:void(0)" data-toggle="dropdown"><i class="fas fa-crown"></i></a>
+              <div class="dropdown-menu crown_notify" aria-labelledby="navbarDropdown">
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify" data-toggle="modal" data-target="#exampleModalx">
+                  <div class="left_data">
+                    <p>user name</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data d-flex align-items-center justify-content-center">
+                      <i class="fas fa-crown"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link notification_toggle" data-toggle="dropdown" href="javascript:void(0)">
+                <i class="fas fa-bell"></i>
+              </a>
+              <div class="dropdown-menu notification_list" aria-labelledby="navbarDropdown">
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 mb-2 item_notify">
+                  <div class="left_data" data-toggle="modal" data-target="#exampleModaly">
+                    <p>user name</p>
+                    <div class="d-flex align-items-center">
+                      <span class="d-inline-block">data</span>
+                      <span class="d-inline-block">100%</span>
+                    </div>
+                  </div>
+                  <div class="right_data">
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <a href="javascript:void(0)" class="mr-1 cancel">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="ml-1 check">
+                          <i class="fas fa-check"></i>
+                        </a>
+                      </div>
+                      <span>24/4/2020</span>
+                      <span>14:56pm</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                <i class="fas fa-user"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="user_profile.html">
+                  <span class="mr-3 ml-2 lang" key="Profile">Profile</span>
+                  <span><i class="fas fa-user"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse login" href="signIn.html">
+                  <span class="mr-3 ml-2 lang" key="login">login</span>
+                  <span><i class="fas fa-user"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="signUp.html">
+                  <span class="mr-3 ml-2 lang" key="createaccount">create account</span>
+                  <span><i class="fas fa-user-friends"></i></span> 
+                  </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse sign-up" href="nomination.html">
+                    <span class="mr-3 ml-2 lang" key="">nomination</span>
+                    <span><i class="fas fa-id-card"></i></span> 
+                    </a>
+                  <a class="dropdown-item d-flex justify-content-end flex-row-reverse" href="javascript:void(0)">
+                  <span class="mr-3 ml-2 lang" key="logout">log out</span>
+                  <span><i class="fas fa-sign-out-alt"></i></span>
+                  </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link" data-toggle="dropdown">
+                <i class="fas fa-language"></i>
+              <span>
+                <div class="dropdown-menu language-dropdown d-none" aria-labelledby="navbarDropdown">
+                    <div class="row m-0">
+                      <div class="col-g-6 lang-parent bord first_bord trans" id="en">
+                          <span class="active">english</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans" id="ar"> 
+                          <span>العربية</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent trans bord" id="fr">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>  
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>    
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>
+                      <div class="col-g-6 lang-parent bord trans">
+                          <span>french</span>
+                      </div>
+                      <div class="col-g-6 lang-parent trans">
+                          <span>germany</span>
+                      </div>
+                  </div>
+                </div> 
+            </li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+    <section class="fill_data sectionPadding" style="margin-top: 100px;">
+        <div class="container">
+          <div class="row lang_change">
+            <div class="col-lg-6">
+              <div>
+                <h2 class="lang lang_change" key="apperance">apperance</h2>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div id="timeline-wrap">
+                <div class="first-timeline active_timeline"></div>
+                <div class="second-timeline"></div>
+                <!-- This is the individual marker-->
+                <div class="marker m1 active">
+                  <p>1</p>
+                </div>
+                <!-- / marker -->
+              
+                <!-- This is the individual marker-->
+                <div class="marker m2">
+                <p>2</p>
+                </div>
+                <!-- / marker -->
+              
+                <!-- This is the individual marker-->
+                <div class="marker m3">
+                <p>3</p>
+                </div>
+                <!-- / marker -->       
+              </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <div class="select_data first text-center">
+                  <div class="text-left ">
+                    <label for="">something else</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else1</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else2</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else3</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <button class="text-center mt-4 btn">استكمال</button>
+                </div>
+                <div class="select_data second text-center">
+                  <div class="text-left ">
+                    <label for="">something else</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else1</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else2</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else3</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <button class="text-center mt-4 btn">استكمال</button>
+                </div>
+                <div class="select_data third text-center">
+                  <div class="text-left ">
+                    <label for="">something else</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else1</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else2</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else3</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else4</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <div class="text-left ">
+                    <label for="">something else5</label>
+                    <select class="">
+                      <option data-display="data1-2">Nothing</option>
+                      <option value="1">Some option</option>
+                      <option value="2">Another option</option>
+                      <option value="3" disabled>A disabled option</option>
+                      <option value="4">Potato</option>
+                    </select>
+                  </div>
+                  <a class="text-center mt-4 btn" href="user_profile.html">استكمال</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="top"><span><i class="fas fa-level-up-alt"></i></span></div>
+      <script src="assets/js/contact-us.js"></script>
+      <!--crown modal-->
+      <div class="modal fade notify_modal" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <span><i class="fas fa-crown"></i></span>
+              <h5 class="modal-title w-100" id="exampleModalLabel">Private Nomination</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+              <div class="text-center accept_user">
+                <a href="private_nomination.html" class="btn">accept</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--notification modal-->
+      <div class="modal fade notify_modal" id="exampleModaly" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center justify-content-between">
+              <h5 class="modal-title w-100" id="exampleModalLabel">User Name</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-around">
+                <div>
+                  <p>Family Name</p>
+                  <p>Nationality</p>
+                  <p>Age</p>
+                  <p>Education</p>
+                  <p>Outside Look</p>
+                  <p>Ay Habd</p>
+                </div>
+                <div>
+                  <p>Name Name</p>
+                  <p>Egyption</p>
+                  <p>25</p>
+                  <p>Student</p>
+                  <p>7elw</p>
+                  <p>Habd Mn No3 A5r</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+</body>
+</html>
